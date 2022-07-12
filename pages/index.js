@@ -13,8 +13,10 @@ export default function Home() {
         <Image className='' src='/static/images/logo.svg' alt='Tip Calculator' width={50} height={50} ></Image>
     </div>
 
+
+
     {/* start of form */}
-    <div className=' bg-white p-4 my-2 rounded-md md:mx-28 lg:mx-56 xl:mx-96'>
+    <div className=' bg-white p-4 my-2 rounded-md mx-auto md:w-3/4 lg:w-3/6 xl:w-3/12'>
       <div className=''>
         <form>
           <span className='text-md'>Bill</span>
@@ -38,7 +40,7 @@ export default function Home() {
       
       {/* result component  */}
 
-        <div className='bg-teal-800 text-white p-6'>
+        <div className='bg-teal-800 text-white p-6 rounded-lg'>
             <div>
               <div className='flex flex-row justify-between'>
                 <p>Tip Amount</p>
@@ -57,9 +59,11 @@ export default function Home() {
                 <span>/  person</span>
               </div>
             </div>
-
-            
       </div>
+    <div className='justify-center items-center'>
+        <input className='py-3 bg-teal-500 rounded-lg w-full mt-4' type="button" value="Reset" />
+    </div>
+    
     </div>
     </div>
   )
