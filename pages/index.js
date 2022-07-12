@@ -2,6 +2,10 @@ import Head from 'next/head'
 import Image from 'next/image'
 
 export default function Home() {
+
+  const handleClick = () => {
+      console.log("Hey, I'm a button!")
+  }
   return (
     <div className=''>
       <Head>
@@ -14,10 +18,11 @@ export default function Home() {
     </div>
 
 
-
+    
     {/* start of form */}
-    <div className=' bg-white p-4 my-2 rounded-md mx-auto md:w-3/4 lg:w-3/6 xl:w-3/12 xl:mt-20'>
-      <div className=''>
+    <div className=' bg-white p-4 my-2 rounded-xl mx-auto md:w-3/4 lg:w-3/6 xl:w-3/12 xl:mt-20'>
+
+      <div className='md:flex-row'>
         <form>
           <span className='text-md'>Bill</span>
           <input type='text' className='mt-1 w-full p-2 outline-teal-500 bg-cyan-100 rounded-md mb-6' placeholder='$'></input>
@@ -36,12 +41,12 @@ export default function Home() {
           </div>
         </form>
       </div>
-      <div>
+
       
       {/* result component  */}
 
-              <div className='bg-teal-800 text-white p-6 rounded-lg'>
-                  <div>
+              <div className='bg-teal-800 text-white p-6 rounded-lg shadow-xl'>
+                  
                     <div className='flex flex-row justify-between'>
                       <p>Tip Amount</p>
                       <span>$0.00</span>
@@ -49,21 +54,21 @@ export default function Home() {
                     <div className='text-xs opacity-70'>
                       <span>/  person</span>
                     </div>
-                  </div>
 
                   <div className='flex flex-row justify-between mt-8'>
                       <p>Total</p>
                       <span>$0.00</span>
                     </div>
+
                     <div className='text-xs opacity-70'>
                       <span>/  person</span>
                     </div>
-                  </div>
             </div>
+            
           <div className='justify-center items-center'>
-              <input className='py-3 bg-teal-500 rounded-lg w-full mt-4 text-white text-xl font-bold hover:bg-white hover:text-black hover:outline' type="button" value="Reset" />
+              <input className='py-3 bg-teal-500 rounded-lg w-full mt-4 text-white text-xl font-bold hover:bg-white hover:text-black hover:outline' type="button" value="Reset" onClick={handleClick} />
           </div>
-    
+  
     </div>
     </div>
   )
