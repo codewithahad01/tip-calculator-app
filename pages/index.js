@@ -25,7 +25,7 @@ export default function Home() {
         <div className=''>
           <form>
             <span className='text-md'>Bill</span>
-            <input type='text' className='mt-1 w-full p-2 ring-1 outline-teal-500 bg-cyan-100 rounded-md mb-6' placeholder='$'></input>
+            <input type='text' className='mt-1 w-full p-2 ring-2 shadow-xl outline-teal-500 bg-cyan-100 rounded-md mb-6' placeholder='$'></input>
             <span className='text-md mb-4'>Select Tip %</span>
             <div className='grid grid-cols-2 gap-2 md:grid-cols-3 mt-2 lg:text-md xl:text-xl'>
               <button className='p-2 bg-teal-700 rounded-md w-28 mx-auto text-white px-4 py-2 font-mono hover:bg-teal-500' type='button'>5%</button>
@@ -33,11 +33,11 @@ export default function Home() {
               <button className='p-2 bg-teal-700 rounded-md w-28 mx-auto text-white px-4 py-2 font-mono hover:bg-teal-500' type='button'>15%</button>
               <button className='p-2 bg-teal-700 rounded-md w-28 mx-auto text-white px-4 py-2 font-mono hover:bg-teal-500' type='button'>25%</button>
               <button className='p-2 bg-teal-700 rounded-md w-28 mx-auto text-white px-4 py-2 font-mono hover:bg-teal-500' type='button'>50%</button>
-              <input type='text' className='outline-teal-500 ring-1 w-28 mx-auto bg-cyan-100 p-1 h-10 rounded-md placeholder:text-xs placeholder:text-center' placeholder='Custom'></input>
+              <input type='text' className='outline-teal-500 ring-2 shadow-xl w-28 mx-auto bg-cyan-100 p-1 h-10 rounded-md placeholder:text-xs placeholder:text-center placeholder:lg:text-lg' placeholder='Custom'></input>
             </div>
             <div className='mt-6 flex flex-col '>
               <span className='mt-4'>Number of People</span>
-              <input type='text' className='mt-1 w-full p-2 ring-1 outline-teal-500 bg-cyan-100 rounded-md mb-6' placeholder='$'></input>
+              <input type='text' className='mt-1 w-full p-2 ring-2 shadow-xl outline-teal-500 bg-cyan-100 rounded-md mb-6' placeholder='$'></input>
             </div>
           </form>
         </div>
