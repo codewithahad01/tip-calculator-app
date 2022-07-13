@@ -28,11 +28,11 @@ export default function Home() {
             <input type='text' className='mt-1 w-full p-2 outline-teal-500 bg-cyan-100 rounded-md mb-6' placeholder='$'></input>
             <span className='text-md mb-4'>Select Tip %</span>
             <div className='grid grid-cols-2 gap-2 md:grid-cols-3 mt-2 lg:text-md xl:text-xl'>
-              <button className='p-2 bg-teal-700 rounded-md w-28 mx-auto text-white px-4 py-2 font-mono hover:bg-teal-500' type='button'>5 %</button>
-              <button className='p-2 bg-teal-700 rounded-md w-28 mx-auto text-white px-4 py-2 font-mono hover:bg-teal-500' type='button'>10 %</button>
-              <button className='p-2 bg-teal-700 rounded-md w-28 mx-auto text-white px-4 py-2 font-mono hover:bg-teal-500' type='button'>15 %</button>
-              <button className='p-2 bg-teal-700 rounded-md w-28 mx-auto text-white px-4 py-2 font-mono hover:bg-teal-500' type='button'>25 %</button>
-              <button className='p-2 bg-teal-700 rounded-md w-28 mx-auto text-white px-4 py-2 font-mono hover:bg-teal-500' type='button'>50 %</button>
+              <button className='p-2 bg-teal-700 rounded-md w-28 mx-auto text-white px-4 py-2 font-mono hover:bg-teal-500' type='button'>5%</button>
+              <button className='p-2 bg-teal-700 rounded-md w-28 mx-auto text-white px-4 py-2 font-mono hover:bg-teal-500' type='button'>10%</button>
+              <button className='p-2 bg-teal-700 rounded-md w-28 mx-auto text-white px-4 py-2 font-mono hover:bg-teal-500' type='button'>15%</button>
+              <button className='p-2 bg-teal-700 rounded-md w-28 mx-auto text-white px-4 py-2 font-mono hover:bg-teal-500' type='button'>25%</button>
+              <button className='p-2 bg-teal-700 rounded-md w-28 mx-auto text-white px-4 py-2 font-mono hover:bg-teal-500' type='button'>50%</button>
               <input type='text' className='outline-teal-500 w-28 mx-auto bg-cyan-100 p-1 h-10 rounded-md placeholder:text-xs placeholder:text-center' placeholder='Custom'></input>
             </div>
             <div className='mt-6 flex flex-col '>
@@ -44,22 +44,21 @@ export default function Home() {
       </div>
       
       {/* result component  */}
-            <div className='p-16 justify-center items-center'>
-              <div className='bg-teal-800 text-white p-6 rounded-lg shadow-xl text-xl lg:text-2xl lg:p-8 xl:p-12'>
+            <div className='p-1 md:mt-16 justify-center items-center'>
+              <div className='bg-teal-800 text-white p-6 rounded-lg shadow-xl text-xl lg:text-2xl md:p-10 lg:p-16 xl:p-12'>
                   
-                    <div className='flex flex-row justify-between'>
-                      <p>Tip Amount</p>
-                      <span className='text-teal-300 text-3xl lg:text-4xl'>$0.00</span>
+                    <div className='flex flex-row justify-between md:justify-between'>
+                      <p className=''>Tip Amount</p>
+                      <span className='text-teal-300 text-3xl lg:text-4xl xl:px-10'>$0.00</span>
                     </div>
                     <div className='text-xs opacity-70'>
                       <span>/  person</span>
                     </div>
 
-                  <div className='flex flex-row justify-between mt-8'>
+                  <div className='flex flex-row justify-between mt-8 '>
                       <p>Total</p>
                       <span className='text-teal-300 text-3xl lg:text-4xl'>$0.00</span>
                     </div>
-
                     <div className='text-xs opacity-70'>
                       <span>/  person</span>
                     </div>
