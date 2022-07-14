@@ -4,6 +4,8 @@ import { useState } from "react";
 
 export default function Home() {
   const [tipAmount, setTipAmount] = useState("");
+  const [totalPeople, setTotalPeople] = useState("");
+  const [reset, setReset] = useState("");
 
   const handleClick = () => {
     console.log("Hey, I'm a button!");
@@ -12,6 +14,18 @@ export default function Home() {
   const showBillInput = (e) => {
     setTipAmount(e.target.value);
   };
+  
+  const showPeopleInput = (e) => {
+    let peope = e.target.value;
+    setTotalPeople(peope);
+  }
+  
+  const resetTexts = (e) => {
+    // setTipAmount("");
+    // setTotalPeople("");
+    e.value = "";
+
+  }
 
   return (
     <div className="">
@@ -38,6 +52,7 @@ export default function Home() {
               <span className="text-md">Bill</span>
               <input
                 type="text"
+                value='bill'
                 onKeyUp={showBillInput}
                 className="mt-1 w-full p-2 ring-2 shadow-xl outline-teal-500 bg-cyan-100 rounded-md mb-6"
                 placeholder="$"
@@ -99,7 +114,7 @@ export default function Home() {
             <div className="flex flex-row justify-between md:justify-between">
               <p className="">Tip Amount</p>
               <hidden className="text-teal-300 text-3xl lg:text-4xl xl:px-10">
-                ${tipAmount}
+                ${tipAmount / totalPeople}.00
               </hidden>
             </div>
             <div className="text-xs opacity-70">
@@ -109,7 +124,7 @@ export default function Home() {
             <div className="flex flex-row justify-between mt-8 ">
               <p>Total</p>
               <span className="text-teal-300 text-3xl lg:text-4xl">
-                ${tipAmount * 2}
+                ${tipAmount}.00
               </span>
             </div>
             <div className="text-xs opacity-70">
@@ -122,7 +137,7 @@ export default function Home() {
               className="py-3 bg-teal-500 rounded-lg w-full mt-4 text-white text-xl font-bold hover:bg-white hover:text-black hover:outline"
               type="button"
               value="Reset"
-              onClick={handleClick}
+              onClick={resetTexts}
             />
           </div>
         </div>
