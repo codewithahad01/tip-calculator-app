@@ -21,10 +21,7 @@ export default function Home() {
   }
   
   const resetTexts = (e) => {
-    // setTipAmount("");
-    // setTotalPeople("");
-    e.value = "";
-
+      setReset("")
   }
 
   return (
@@ -52,7 +49,7 @@ export default function Home() {
               <span className="text-md">Bill</span>
               <input
                 type="text"
-                value='bill'
+                // value={reset}  
                 onKeyUp={showBillInput}
                 className="mt-1 w-full p-2 ring-2 shadow-xl outline-teal-500 bg-cyan-100 rounded-md mb-6"
                 placeholder="$"
@@ -113,9 +110,9 @@ export default function Home() {
           <div className="bg-teal-800 text-white p-6 rounded-lg shadow-xl text-xl lg:text-2xl md:p-10 lg:p-16 xl:p-12">
             <div className="flex flex-row justify-between md:justify-between">
               <p className="">Tip Amount</p>
-              <hidden className="text-teal-300 text-3xl lg:text-4xl xl:px-10">
+              <span className="text-teal-300 text-3xl lg:text-4xl xl:px-10">
                 ${tipAmount / totalPeople}.00
-              </hidden>
+              </span>
             </div>
             <div className="text-xs opacity-70">
               <span>/ person</span>
